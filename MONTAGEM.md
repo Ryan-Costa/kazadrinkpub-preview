@@ -65,14 +65,14 @@ WhatsApp: `+55 85 92004-9048`. Mapa: `https://www.google.com/maps/search/?api=1&
 
 1. **Abertura** (hero)
    - Fundo: foto, foco no centro. Alinhamento: esquerda. Sombra: forte. Dica de rolagem: ligada.
-   - Sobretítulo `Drinks • música • encontro`; título em duas linhas: `A KAZA` e `é *nossa!*`
+   - Sobretítulo `Drinks • música • encontro`; título em duas linhas: `O KAZA` e `é *nosso!*`
    - Subtítulo: `Uma casa de encontros, bons drinks e música boa, num casarão histórico no São João do Tauape, em Fortaleza.`
    - Botões: `Reserve pelo WhatsApp` → `https://wa.me/5585920049048?text=Oi! Quero fazer uma reserva no KAZA.` (principal); `Ver o cardápio` → `#cardapio` (contorno)
-2. **Sobre** (about), âncora `a-kaza`, menu `A KAZA`, foto à direita
-   - Sobretítulo `A KAZA`, título `Um pub que vai *além do bar*`, os dois parágrafos da prévia
+2. **Sobre** (about), âncora `o-kaza`, menu `O KAZA`, foto à direita
+   - Sobretítulo `O KAZA`, título `Um pub que vai *além do bar*`, os dois parágrafos da prévia
    - Botão `Como chegar` → mapa
 3. **Texto** (rich_text), âncora `horarios`, menu `Horários`, centralizado
-   - Sobretítulo `Funcionamento`, título `Quando a KAZA *abre*`
+   - Sobretítulo `Funcionamento`, título `Quando o KAZA *abre*`
    - Texto: `Quinta: das 19h à 01h` / `Sexta e sábado: das 20h às 03h` / (linha em branco) / `Happy hour: quinta e sexta, das 20h às 23h.`
    - Domingo a quarta não aparecem no site atual **(confirmar se fecha)**
 4. **Vitrine** (showcase), âncora `happy-hour`, menu `Happy hour`, fotos à direita, 5 s
@@ -85,19 +85,19 @@ WhatsApp: `+55 85 92004-9048`. Mapa: `https://www.google.com/maps/search/?api=1&
    - Cartão com lista (ícone Link), `Cardápio *completo*` / `Preços e opções de cada categoria`, links: Drinkeria, Petiscaria, Cervejas, Bebidas, Combos, Happy hour → as páginas do site atual
    - Quando o site atual sair do ar, o cardápio pode virar uma página "Cardápio" no Waveform, com uma seção de Texto por categoria
 6. **Agenda** (agenda), âncora `agenda`, menu `Agenda`
-   - Sobretítulo `Programação da semana`, título `O que rola na *KAZA*`
+   - Sobretítulo `Programação da semana`, título `O que rola no *KAZA*`
    - Texto quando não há eventos: `A programação da semana sai no nosso Instagram, nos destaques "Agenda". Em breve, direto aqui.`
 7. **Faixa de chamada** (cta_banner), âncora `aniversario`, menu `Aniversário`
    - Título `Seu aniversário merece ser comemorado *no KAZA*`
    - Texto: `Entrada VIP com acompanhante, drink de boas-vindas e lista com 50% na entrada para os convidados até as 21h.`
    - Botão `Reservar aniversário` → `https://wa.me/5585920049048?text=Oi! Quero comemorar meu aniversário no KAZA.`
-8. **Galeria** (gallery), âncora `fotos`, layout **destaque**: sobretítulo `Na KAZA`, título `Noites que ficam na *memória*`, 5 fotos com legenda
+8. **Galeria** (gallery), âncora `fotos`, layout **destaque**: sobretítulo `No KAZA`, título `Noites que ficam na *memória*`, 5 fotos com legenda
 9. **Divisor** (divider): onda, 104 px
 10. **Contato** (contact), âncora `contato`, menu `Contato`
-    - Sobretítulo `Reservas e contato`, título `Vem pra *KAZA*`, texto `Reservas, aniversários e ativação de marcas: fale com a gente pelo WhatsApp.`
+    - Sobretítulo `Reservas e contato`, título `Vem pro *KAZA*`, texto `Reservas, aniversários e ativação de marcas: fale com a gente pelo WhatsApp.`
     - Itens: WhatsApp `5585920049048` (texto exibido `(85) 92004-9048`); Link, rótulo `Endereço`, mapa (texto `Rua Monsenhor Salazar, 1306 · São João do Tauape`); E-mail `kazapubfortaleza@gmail.com`; Instagram `kazadrinkpub`
     - Botão `Reserve pelo WhatsApp` → WhatsApp
-11. **Redes sociais** (social_links), centralizado, título `A KAZA é nossa!`: Instagram, Facebook (`https://www.facebook.com/kazadrinkpub`), X (`https://x.com/kazadrinkpub`), WhatsApp
+11. **Redes sociais** (social_links), centralizado, título `O KAZA é nosso!`: Instagram, Facebook (`https://www.facebook.com/kazadrinkpub`), X (`https://x.com/kazadrinkpub`), WhatsApp
 12. **Rodapé** (footer): texto `Rua Monsenhor Salazar, 1306 · São João do Tauape · Fortaleza, CE`, links `Cardápio` (#cardapio), `Happy hour` (#happy-hour), `Reservas` (WhatsApp), voltar ao topo ligado
 
 Depois: **Publicar**.
