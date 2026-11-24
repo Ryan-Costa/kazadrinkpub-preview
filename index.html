@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KAZA drink&amp;pub · Drinks, música e encontro em Fortaleza</title>
+<meta name="description" content="KAZA drink&pub: casa de encontros, bons drinks e música boa num casarão histórico no São João do Tauape, em Fortaleza. Quinta das 19h à 01h, sexta e sábado das 20h às 03h.">
+<!--
+  Site de setup inicial, montado com os blocos, o tema e o CSS do Waveform (waveform/site.css é cópia de src/components/site/site.css).
+  Cada <section> corresponde a um bloco do editor; o passo a passo está em MONTAGEM.md.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="waveform/site.css">
+<style>
+  /* Fontes como o next/font expõe no Waveform: --font-<chave>. */
+  :root{--font-unbounded:"Unbounded";--font-space-grotesk:"Space Grotesk";--font-dm-sans:"DM Sans"}
+  body{margin:0}
+</style>
+</head>
+<body>
+<!-- Tema do Waveform (Aparência): as mesmas variáveis que themeToCssVars() gera. -->
+<div class="wf-site" style="
+  --wf-bg:#0e1424; --wf-surface:#17213b; --wf-text:#fff8ec; --wf-muted:#bac3d8;
+  --wf-primary:#3b8bff; --wf-accent:#ffc21a;
+  --wf-primary-rgb:59, 139, 255; --wf-accent-rgb:255, 194, 26; --wf-bg-rgb:14, 20, 36;
+  --wf-on-accent:#0b0314; --wf-on-primary:#0b0314; --wf-line:rgba(59, 139, 255, .35); --wf-radius:14px;
+  --wf-font-title:var(--font-unbounded); --wf-size-title:1.3;
+  --wf-font-heading:var(--font-unbounded); --wf-size-heading:.9;
+  --wf-font-eyebrow:var(--font-space-grotesk); --wf-size-eyebrow:1.1;
+  --wf-font-nav:var(--font-space-grotesk); --wf-size-nav:1.1;
+  --wf-font-body:var(--font-dm-sans); --wf-size-body:1.05;
+  --wf-font-button:var(--font-space-grotesk); --wf-size-button:1.05;">
+
+  <div style="position:relative">
+    <header class="wf-header wf-header--overlay">
+      <a href="#" class="wf-logo" aria-label="KAZA drink&amp;pub"><span>KAZA drink&amp;pub</span></a>
+      <button type="button" class="wf-nav-toggle" aria-expanded="false" aria-controls="wf-menu" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+      <nav id="wf-menu" class="wf-nav" aria-label="Navegação principal">
+        <a href="#a-kaza">A KAZA</a>
+        <a href="#horarios">Horários</a>
+        <a href="#happy-hour">Happy hour</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#aniversario">Aniversário</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <!-- Bloco: Abertura (hero) · fundo: foto · alinhamento: esquerda · sombra: forte -->
+    <section class="wf-hero" aria-label="KAZA drink&amp;pub">
+      <div class="wf-hero__media" style="--wf-fx:.5;--wf-fy:.5;--wf-aspect:1920 / 1280">
+        <picture><img src="assets/dz3-0678-a-street-bartender-leans-on.jpg" alt="" loading="eager" decoding="async"></picture>
+      </div>
+      <div class="wf-hero__shade wf-hero__shade--strong"></div>
+      <div class="wf-hero__content wf-hero__content--left">
+        <span class="wf-eyebrow">Drinks • música • encontro</span>
+        <h1 class="wf-h1"><span><span>A KAZA</span></span><span class="wf-shimmer"><span>é </span><em>nossa!</em></span></h1>
+        <p class="wf-lead" style="max-width:640px">Uma casa de encontros, bons drinks e música boa, num casarão histórico no São João do Tauape, em Fortaleza.</p>
+        <div class="wf-hero__ctas">
+          <a href="https://wa.me/5585920049048?text=Oi!%20Quero%20fazer%20uma%20reserva%20no%20KAZA." class="wf-btn wf-btn--primary" target="_blank" rel="noopener noreferrer">Reserve pelo WhatsApp</a>
+          <a href="#cardapio" class="wf-btn wf-btn--outline">Ver o cardápio</a>
+        </div>
+        <a href="#a-kaza" class="wf-scroll">Role
+          <svg width="18" height="26" viewBox="0 0 18 26" fill="none" stroke="var(--wf-accent)" stroke-width="1.6" aria-hidden="true"><rect x="1" y="1" width="16" height="24" rx="8"/><circle class="wf-beat" cx="9" cy="8" r="2" fill="var(--wf-accent)" stroke="none"/></svg>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <main id="conteudo">
+    <!-- Bloco: Sobre (about) · foto à direita -->
+    <section class="wf-section" id="a-kaza">
+      <div class="wf-about">
+        <div>
+          <div class="wf-head">
+            <div class="wf-head__text">
+              <span class="wf-eyebrow">A KAZA</span>
+              <h2 class="wf-h2"><span>Um pub que vai </span><em>além do bar</em></h2>
+            </div>
+          </div>
+          <div class="wf-prose">
+            <p><span>O KAZA nasceu em Fortaleza para ser um espaço único: a experiência de um aconchego com uma pista de dança, dentro de um casarão histórico.</span></p>
+            <p><span>Tem drinks autorais, caipirinhas premium, lounges com aquele toque VIP e música boa até tarde. É a casa de quem gosta de encontro, e de experiências que ficam na memória.</span></p>
+          </div>
+          <p style="margin-top:28px"><a href="https://www.google.com/maps/search/?api=1&amp;query=KAZA%20drink%26pub%2C%20Rua%20Monsenhor%20Salazar%2C%201306%2C%20S%C3%A3o%20Jo%C3%A3o%20do%20Tauape%2C%20Fortaleza%20-%20CE" class="wf-btn wf-btn--primary" target="_blank" rel="noopener noreferrer">Como chegar</a></p>
+        </div>
+        <div>
+          <img src="assets/palacete-thomaz-pompeu-sobrinho-escola-de-artes.jpg" width="1920" height="2303" alt="Casarão histórico em Fortaleza (foto de referência)" loading="lazy" decoding="async" class="wf-about__image">
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloco: Texto (rich_text) · centralizado -->
+    <section class="wf-section" id="horarios">
+      <div style="max-width:820px;margin:0 auto;text-align:center">
+        <div class="wf-head wf-center">
+          <span class="wf-eyebrow">Funcionamento</span>
+          <h2 class="wf-h2"><span>Quando a KAZA </span><em>abre</em></h2>
+        </div>
+        <div class="wf-prose">
+          <p><span>Quinta: das 19h à 01h</span><br><span>Sexta e sábado: das 20h às 03h</span></p>
+          <p><span>Happy hour: quinta e sexta, das 20h às 23h.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloco: Vitrine (showcase) · fotos à direita · troca a cada 5 s -->
+    <section class="wf-section" id="happy-hour" style="padding-top:60px;padding-bottom:20px">
+      <div class="wf-card wf-showcase">
+        <div class="wf-showcase__text">
+          <span class="wf-eyebrow">Quinta e sexta · 20h às 23h</span>
+          <h2 class="wf-h2"><span>Hora Boa do </span><em>KAZA</em></h2>
+          <p class="wf-showcase__lead">Kaipirinha tradicional de R$ 19 por R$ 15. Drinks autorais como Dona Helena, Belchior e Kaza Mule a partir de R$ 24, clássicos a partir de R$ 15 e comidinhas a partir de R$ 14.</p>
+          <a href="https://kazadrinkpub.com/happyhour/" class="wf-showcase__cta" target="_blank" rel="noopener noreferrer">Ver o happy hour</a>
+        </div>
+        <div class="wf-showcase__media" role="region" aria-roledescription="carrossel" aria-label="Hora Boa do KAZA">
+          <div class="wf-showcase__frame">
+            <div class="wf-showcase__slide is-active"><img src="assets/caipirinha-in-the-cocktail-shaker.jpg" width="1920" height="2560" alt="Caipirinha na coqueteleira" loading="eager" decoding="async"></div>
+            <div class="wf-showcase__slide" aria-hidden="true"><img src="assets/dfc-1952-a-lively-group-of-friends.jpg" width="1920" height="1280" alt="Amigos brindando no bar" loading="lazy" decoding="async"></div>
+          </div>
+          <div class="wf-showcase__dots">
+            <button type="button" class="wf-showcase__dot" aria-label="Mostrar a foto 1" aria-current="true"></button>
+            <button type="button" class="wf-showcase__dot" aria-label="Mostrar a foto 2"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloco: Mídias (media) · sem vídeo em destaque · cartões em coluna + cartão com lista -->
+    <section class="wf-section" id="cardapio">
+      <div class="wf-head">
+        <div class="wf-head__text">
+          <span class="wf-eyebrow">Cardápio</span>
+          <h2 class="wf-h2"><span>Drinks, petiscos e </span><em>cerveja gelada</em></h2>
+        </div>
+      </div>
+      <div class="wf-media wf-media--side">
+        <div class="wf-media__side">
+          <div class="wf-media__row">
+            <a href="https://kazadrinkpub.com/drinks/" class="wf-card wf-icon-card" target="_blank" rel="noopener noreferrer">
+              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>
+              <span><strong><span>Drinks </span><em>autorais</em></strong><span class="wf-muted" style="font-size:15px">Escobar, Belchior, Jurema, Manga Maria e mais</span></span>
+            </a>
+            <a href="https://kazadrinkpub.com/drinks/" class="wf-card wf-icon-card" target="_blank" rel="noopener noreferrer">
+              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>
+              <span><strong><span>Caipirinhas </span><em>Fratelli</em></strong><span class="wf-muted" style="font-size:15px">Cachaças envelhecidas em aroeira, bálsamo e ipê</span></span>
+            </a>
+            <a href="https://kazadrinkpub.com/petiscos/" class="wf-card wf-icon-card" target="_blank" rel="noopener noreferrer">
+              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>
+              <span><strong>Petiscaria</strong><span class="wf-muted" style="font-size:15px">Batata trufada, mini pastéis, coxinha sem massa</span></span>
+            </a>
+          </div>
+          <div class="wf-card wf-icon-card wf-icon-card--list">
+            <div class="wf-icon-card__head">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>
+              <div><strong><span>Cardápio </span><em>completo</em></strong><span class="wf-muted" style="font-size:15px">Preços e opções de cada categoria</span></div>
+            </div>
+            <div class="wf-list-links">
+              <a href="https://kazadrinkpub.com/drinks/" target="_blank" rel="noopener noreferrer"><span>Drinkeria</span><span aria-hidden="true">↗</span></a>
+              <a href="https://kazadrinkpub.com/petiscos/" target="_blank" rel="noopener noreferrer"><span>Petiscaria</span><span aria-hidden="true">↗</span></a>
+              <a href="https://kazadrinkpub.com/cerveja-gelada/" target="_blank" rel="noopener noreferrer"><span>Cervejas</span><span aria-hidden="true">↗</span></a>
+              <a href="https://kazadrinkpub.com/bebidas/" target="_blank" rel="noopener noreferrer"><span>Bebidas</span><span aria-hidden="true">↗</span></a>
+              <a href="https://kazadrinkpub.com/combos/" target="_blank" rel="noopener noreferrer"><span>Combos</span><span aria-hidden="true">↗</span></a>
+              <a href="https://kazadrinkpub.com/happyhour/" target="_blank" rel="noopener noreferrer"><span>Happy hour</span><span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloco: Agenda (agenda) · sem eventos cadastrados: mostra o texto de "nada por enquanto" -->
+    <section class="wf-section" id="agenda">
+      <div class="wf-head">
+        <div class="wf-head__text">
+          <span class="wf-eyebrow">Programação da semana</span>
+          <h2 class="wf-h2"><span>O que rola na </span><em>KAZA</em></h2>
+        </div>
+      </div>
+      <p class="wf-muted">A programação da semana sai no nosso Instagram, nos destaques "Agenda". Em breve, direto aqui.</p>
+    </section>
+
+    <!-- Bloco: Faixa de chamada (cta_banner) -->
+    <section class="wf-section" id="aniversario" style="padding-top:60px;padding-bottom:20px">
+      <div class="wf-card wf-banner">
+        <div style="flex:1 1 320px;min-width:0">
+          <p class="wf-banner__title"><span>Seu aniversário merece ser comemorado </span><em>no KAZA</em></p>
+          <p class="wf-muted" style="font-size:17px;margin-top:4px">Entrada VIP com acompanhante, drink de boas-vindas e lista com 50% na entrada para os convidados até as 21h.</p>
+        </div>
+        <a href="https://wa.me/5585920049048?text=Oi!%20Quero%20comemorar%20meu%20anivers%C3%A1rio%20no%20KAZA." class="wf-btn wf-btn--primary" target="_blank" rel="noopener noreferrer">Reservar aniversário</a>
+      </div>
+    </section>
+
+    <!-- Bloco: Galeria (gallery) · layout: destaque -->
+    <section class="wf-section" id="fotos">
+      <div class="wf-head">
+        <div class="wf-head__text">
+          <span class="wf-eyebrow">Na KAZA</span>
+          <h2 class="wf-h2"><span>Noites que ficam na </span><em>memória</em></h2>
+        </div>
+      </div>
+      <div class="wf-gallery-grid wf-gallery-grid--featured">
+        <figure><img src="assets/dfc-1952-a-lively-group-of-friends.jpg" width="1920" height="1280" alt="Amigos brindando no bar" loading="lazy" decoding="async"><figcaption>Brinde com a galera</figcaption></figure>
+        <figure><img src="assets/kazantip-popovka-crimea-techno-dance-floor-at.jpg" width="1920" height="1280" alt="Pista de dança com luz vermelha" loading="lazy" decoding="async"><figcaption>Pista até as 3h</figcaption></figure>
+        <figure><img src="assets/lyrical-encouter-benfo-20-abstract-wall-painting.jpg" width="1920" height="1600" alt="Parede pintada com cores fortes" loading="lazy" decoding="async"><figcaption>Cor por todo lado</figcaption></figure>
+        <figure><img src="assets/caipirinha-in-the-cocktail-shaker.jpg" width="1920" height="2560" alt="Caipirinha na coqueteleira" loading="lazy" decoding="async"><figcaption>Caipirinha na hora</figcaption></figure>
+        <figure><img src="assets/dz3-0678-a-street-bartender-leans-on.jpg" width="1920" height="1280" alt="Balcão de bar com neon e garrafas" loading="lazy" decoding="async"><figcaption>O balcão</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- Bloco: Divisor (divider) · onda · 104 px -->
+    <div class="wf-wave" aria-hidden="true" style="height:104px"><div class="wf-wave__line"></div><div class="wf-wave__bars" id="wave"></div></div>
+
+    <!-- Bloco: Contato (contact) -->
+    <section class="wf-section" id="contato" style="padding-bottom:120px">
+      <div class="wf-contact">
+        <div>
+          <span class="wf-eyebrow">Reservas e contato</span>
+          <h2 class="wf-h2"><span>Vem pra </span><em>KAZA</em></h2>
+          <p class="wf-lead" style="max-width:460px">Reservas, aniversários e ativação de marcas: fale com a gente pelo WhatsApp.</p>
+        </div>
+        <div>
+          <a href="https://wa.me/5585920049048?text=Oi!%20Quero%20fazer%20uma%20reserva%20no%20KAZA." class="wf-card wf-contact__item" target="_blank" rel="noopener noreferrer"><small>WhatsApp</small><strong>(85) 92004-9048</strong></a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=KAZA%20drink%26pub%2C%20Rua%20Monsenhor%20Salazar%2C%201306%2C%20S%C3%A3o%20Jo%C3%A3o%20do%20Tauape%2C%20Fortaleza%20-%20CE" class="wf-card wf-contact__item" target="_blank" rel="noopener noreferrer"><small>Endereço</small><strong>Rua Monsenhor Salazar, 1306 · São João do Tauape</strong></a>
+          <a href="mailto:kazapubfortaleza@gmail.com" class="wf-card wf-contact__item"><small>E-mail</small><strong>kazapubfortaleza@gmail.com</strong></a>
+          <a href="https://www.instagram.com/kazadrinkpub/" class="wf-card wf-contact__item" target="_blank" rel="noopener noreferrer"><small>Instagram</small><strong>@kazadrinkpub</strong></a>
+          <a href="https://wa.me/5585920049048?text=Oi!%20Quero%20fazer%20uma%20reserva%20no%20KAZA." class="wf-btn wf-btn--primary" target="_blank" rel="noopener noreferrer">Reserve pelo WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloco: Redes sociais (social_links) · centralizado -->
+    <section class="wf-section" style="padding-top:60px;padding-bottom:20px;text-align:center">
+      <p class="wf-eyebrow" style="margin-bottom:20px">A KAZA é nossa!</p>
+      <div class="wf-socials" style="justify-content:center">
+        <a href="https://www.instagram.com/kazadrinkpub/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://www.facebook.com/kazadrinkpub" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 8h2.5V4.5H14A3.5 3.5 0 0 0 10.5 8v2H8v3.5h2.5V20H14v-6.5h2.5L17 10h-3V8Z"/></svg></a>
+        <a href="https://x.com/kazadrinkpub" aria-label="X" target="_blank" rel="noopener noreferrer"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></a>
+        <a href="https://wa.me/5585920049048" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.2-4A8 8 0 1 1 8 18.8L4 20Z"/><path d="M9 9.5c.3 2 2 3.9 4.5 4.8l1-1.3-1.7-.9-.8.6c-.8-.4-1.6-1.2-2-2l.6-.8-.9-1.7L9 9.5Z"/></svg></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Bloco: Rodapé (footer) -->
+  <footer class="wf-footer">
+    <strong style="font-family:var(--wf-font-heading);color:var(--wf-text)">KAZA drink&amp;pub</strong>
+    <span>Rua Monsenhor Salazar, 1306 · São João do Tauape · Fortaleza, CE</span>
+    <nav class="wf-footer__links" aria-label="Links do rodapé">
+      <a href="#cardapio">Cardápio</a>
+      <a href="#happy-hour">Happy hour</a>
+      <a href="https://wa.me/5585920049048" target="_blank" rel="noopener noreferrer">Reservas</a>
+    </nav>
+    <a href="#" style="color:var(--wf-accent)">Voltar ao topo ↑</a>
+  </footer>
+
+  <aside class="wf-credit">
+    <span>Feito com Waveform.</span> <a href="https://wa.me/5585991623247?text=Oi!%20Conheci%20a%20Waveform%20pela%20p%C3%A1gina%20de%20KAZA%20drink%26pub%20e%20quero%20saber%20mais." target="_blank" rel="noopener noreferrer">Quer a sua? Fale com a Cuebase</a>
+  </aside>
+  <p class="wf-credit" style="padding-top:0">Fotos de referência: <a href="https://commons.wikimedia.org/w/index.php?curid=196953799">balcão com neon</a> e <a href="https://commons.wikimedia.org/w/index.php?curid=190208329">brinde</a>, PattayaPatrol, CC BY-SA 4.0; <a href="https://commons.wikimedia.org/w/index.php?curid=153347964">Palacete Thomaz Pompeu Sobrinho</a>, GLandovsky, CC BY-SA 4.0; <a href="https://commons.wikimedia.org/w/index.php?curid=15885904">caipirinha</a>, Ben Sutherland, CC BY 2.0; <a href="https://commons.wikimedia.org/wiki/File:Kazantip,_Popovka,_Crimea,_Techno_dance_floor_at_night,_Red_lights.jpg">pista</a>, Vyacheslav Argenberg, CC BY 4.0; mural, Ben Vollers e Fons Heijnsbroek, CC0. Via Wikimedia Commons.</p>
+</div>
+
+<script>
+  // Cabeçalho: no celular os links viram menu (como o SiteHeader do Waveform).
+  const header = document.querySelector('.wf-header'), toggle = document.querySelector('.wf-nav-toggle')
+  toggle.addEventListener('click', () => { const open = header.classList.toggle('is-open'); toggle.setAttribute('aria-expanded', String(open)); toggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu') })
+  document.querySelectorAll('#wf-menu a').forEach((a) => a.addEventListener('click', () => header.classList.remove('is-open')))
+  document.addEventListener('keydown', (e) => e.key === 'Escape' && header.classList.remove('is-open'))
+
+  // Vitrine: troca de foto a cada 5 s (como o ShowcaseCarousel do Waveform).
+  const slides = [...document.querySelectorAll('.wf-showcase__slide')], dots = [...document.querySelectorAll('.wf-showcase__dot')]
+  let active = 0
+  const show = (i) => { active = i; slides.forEach((s, j) => { s.classList.toggle('is-active', j === i); j === i ? s.removeAttribute('aria-hidden') : s.setAttribute('aria-hidden', 'true') }); dots.forEach((d, j) => j === i ? d.setAttribute('aria-current', 'true') : d.removeAttribute('aria-current')) }
+  dots.forEach((d, i) => d.addEventListener('click', () => show(i)))
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) setInterval(() => { if (!document.hidden) show((active + 1) % slides.length) }, 5000)
+
+  // Divisor em onda: as mesmas barras que o DividerBlock do Waveform desenha (do primário ao destaque).
+  const lerp = (a, b, t) => { const pa = parseInt(a.slice(1), 16), pb = parseInt(b.slice(1), 16); const ch = (s) => Math.round(((pa >> s) & 255) + (((pb >> s) & 255) - ((pa >> s) & 255)) * t); return '#' + [16, 8, 0].map((s) => ch(s).toString(16).padStart(2, '0')).join('') }
+  const N = 160, MAX = Math.max(24, Math.round(104 * 0.62)), wave = document.getElementById('wave')
+  for (let i = 0; i < N; i++) { const t = i / (N - 1), env = 0.16 + 0.84 * Math.exp(-(((t - 0.5) / 0.3) ** 2)), ripple = 0.5 + 0.5 * Math.abs(Math.sin(i * 1.7) * Math.cos(i * 0.63 + 1)); const el = document.createElement('i'); el.style.height = Math.max(3, Math.round(MAX * env * ripple)) + 'px'; el.style.background = lerp('#3b8bff', '#ffc21a', t); wave.appendChild(el) }
+</script>
+</body>
+</html>
